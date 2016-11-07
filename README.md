@@ -11,7 +11,7 @@ Learning basic standards of using HTML 5: including
 * CSS Animation 
 
 Design of site follows mock ups: 
-![alt tag] https://github.com/thesparrow/HTML5/blob/master/mockups/homePage.jpg
+![seeme] https://github.com/thesparrow/HTML5/blob/master/mockups/homePage.jpg
 
 
 
