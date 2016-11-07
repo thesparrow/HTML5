@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Coffee Details</title>
+    <link rel="stylesheet" href="style/style.css" type="text/css" />
+    <script src="scripts/videoPlayer.js"></script>
+    <script src="scripts/canvasChart.js"></script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <a class="headerlogo" href="index.html">
+                <img src="images/logo.png" />
+            </a>
+            <span id="headername">Joe's Coffee Store</span>
+            <input type="search" class="searchbox" placeholder="Search our store" />
+        </div>
+        <nav class="backgroundgradient">
+            <ul>
+                <li><a class="navlink" href="index.html">Home</a></li>
+                <li><a class="navlink" href="blog.html">Blog</a></li>
+                <li><a class="navlink" href="allcoffees.html">Our coffees</a></li>
+                <li><a class="navlink" href="accessories.html">Accessories</a></li>
+                <li><a class="navlink" href="Gifts.html">Gifts</a></li>
+                <li><a class="navlink" href="findus.html">Find us</a></li>
+                <li><a class="navlink" href="checkout.html">Checkout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="welcomeimage">
+        <img src="images/coffeeheader.jpg" />
+    </div>
+    <div id="coffeeofthemonth">
+        <img src="images/cotm.jpg" />
+    </div>
+    <section class="coffeedetails">
+        <header class="coffeeHeader">
+            <span> Coffee 1</span>
+        </header>
+        <figure class="productarticlelargefigure">
+            <img class="productarticlelargeimage" src="images/coffee/coffee1-large.jpg">
+            <figcaption> Coffee 1</figcaption>
+        </figure>
+        <div class="productarticlecontent">
+            <p class="productarticledescription"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p class="productarticleprice">$10</p>
+        </div>
+        <div>
+            <video width="320" height="240" class="coffeevideoplayer" id="videoplayer" poster="images/coffeeImage.jpg">
+                <source src="video/movie.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+                <source src="video/movie.ogg" type='video/ogg; codecs="theora, vorbis"' /> Sadly your browser has no support for video…
+            </video>
+            <div id="controls">
+                <div id="errorDiv" style="color:Red;"></div>
+                <button id="slowerButton">Slower</button>
+                <button id="backButton">Rewind</button>
+                <button id="playButton">Play</button>
+                <button id="forwardButton">Forward</button>
+                <button id="fasterButton">Faster</button>
+                <button id="muteButton">Mute</button>
+                <br />
+                <br />
+                <br />
+            </div>
+        </div>
+    </section>
+    <div id="salesCanvasGraph">
+        <svg width="3000" height="3000">
+            <!--transform="matrix(0 0 0 -1 -1 -1)"-->
+            <defs>
+                <linearGradient id="gradient1" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <line x1="40" y1="800" x2="1200" y2="800" stroke="black" stroke-width="2"></line>
+            <line x1="40" y1="0" x2="40" y2="800" stroke="black" stroke-width="2"></line>
+            <line x1="40" y1="200" x2="1200" y2="200" stroke="black" stroke-width="0.5" stroke-dasharray="10,5"></line>
+            <line x1="40" y1="400" x2="1200" y2="400" stroke="black" stroke-width="0.5" stroke-dasharray="10,5"></line>
+            <line x1="40" y1="600" x2="1200" y2="600" stroke="black" stroke-width="0.5" stroke-dasharray="10,5"></line>
+            <line x1="40" y1="800" x2="1200" y2="800" stroke="black" stroke-width="0.5" stroke-dasharray="10,5"></line>
+            <!--<rect class="bar" x="-90" y="0" height="170" width="20" fill="red" transform="translate(0, 800), rotate(180)"></rect>-->
+            <rect class="bar" x="70" y="-800" height="170" width="20" fill="blue" transform="scale(1,-1)"></rect>
+            <rect class="bar" x="120" y="-800" height="320" width="20" fill="blue" transform="scale(1,-1)"></rect>
+            <rect class="bar" x="170" y="-800" height="432" width="20" fill="blue" transform="scale(1,-1)"></rect>
+            <rect class="bar" x="220" y="-800" height="548" width="20" fill="blue" transform="scale(1,-1)"></rect>
+            <rect class="bar" x="270" y="-800" height="342" width="20" fill="blue" transform="scale(1,-1)"></rect>
+            <rect class="bar" x="320" y="-800" height="0" width="20" fill="url(#gradient1)" transform="scale(1,-1)">
+                <animate attributeName="height" to="689" fill="freeze" dur="5" />
+            </rect>
+            <rect class="bar" x="370" y="-800" height="344" width="20" fill="blue" transform="scale(1,-1)"></rect>
+            <rect class="bar" x="420" y="-800" height="109" width="20" fill="blue" transform="scale(1,-1)"></rect>
+            <rect class="bar" x="470" y="-800" height="655" width="20" fill="blue" transform="scale(1,-1)"></rect>
+            <rect class="bar" x="520" y="-800" height="327" width="20" fill="blue" transform="scale(1,-1)"></rect>
+            <rect class="bar" x="570" y="-800" height="109" width="20" fill="blue" transform="scale(1,-1)"></rect>
+            <rect class="bar" x="620" y="-800" height="235" width="20" fill="blue" transform="scale(1,-1)"></rect>
+            <text x="73" y="850" fill="black">Jan</text>
+            <text x="123" y="850" fill="black">Feb</text>
+            <text x="173" y="850" fill="black">Mar</text>
+            <text x="223" y="850" fill="black">Apr</text>
+            <text x="273" y="850" fill="black">May</text>
+            <text x="323" y="850" fill="black">Jun</text>
+            <text x="373" y="850" fill="black">Jul</text>
+            <text x="423" y="850" fill="black">Aug</text>
+            <text x="473" y="850" fill="black">Sep</text>
+            <text x="523" y="850" fill="black">Oct</text>
+            <text x="573" y="850" fill="black">Nov</text>
+            <text x="623" y="850" fill="black">Dec</text>
+            <text x="70" y="625" fill="#888888">170</text>
+            <text x="120" y="475" fill="#888888">320</text>
+            <text x="170" y="363" fill="#888888">432</text>
+            <text x="220" y="247" fill="#888888">548</text>
+            <text x="270" y="453" fill="#888888">342</text>
+            <text x="320" y="107" fill="#888888">689</text>
+            <text x="370" y="451" fill="#888888">344</text>
+            <text x="420" y="686" fill="#888888">109</text>
+            <text x="470" y="140" fill="#888888">655</text>
+            <text x="520" y="468" fill="#888888">327</text>
+            <text x="570" y="686" fill="#888888">109</text>
+            <text x="620" y="560" fill="#888888">235</text>
+        </svg>
+    </div>
+    <footer>
+        <p class="location"> We are located at
+            <address>65 New Street, 90731 Long Bean</address>
+        </p>
+        <p class="copyright"> All site is copyright &copy; to the Java Web LLC</p>
+    </footer>
+</body>
+<script>
+document.addEventListener("DOMContentLoaded", intializeVideoPlayerControls, false);
+document.addEventListener("DOMContentLoaded", drawChart, false);
+</script>
+
+</html>

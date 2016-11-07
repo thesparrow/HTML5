@@ -1,0 +1,358 @@
+body {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Verdana;
+}
+
+@font-face {
+    font-family: headerfont;
+    src: url('../fonts/Lobster_1.3.otf');
+}
+
+header {
+    font-weight: bold;
+}
+
+.searchbox {
+    float: right;
+    padding: 5px;
+    margin: 10px 10px;
+    width: 200px;
+}
+
+.headerlogo {
+    float: left;
+    margin-right: 10px;
+}
+
+.headerlogo > img {
+    height: 60px;
+    width: 60px;
+}
+
+#headername {
+    font-family: headerfont;
+    font-size: 40px;
+    color: #603813;
+    padding: 15px;
+    margin: 8px 0px;
+    font-weight: bold;
+    text-shadow: 3px 1px 1px #5f2c17;
+}
+
+nav {
+    height: 45px;
+    width: 100%;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    padding-left: 5px;
+    background-color: green;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0px;
+    text-decoration: none;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    padding-right: 10px;
+}
+
+.navlink {
+    color: white;
+}
+
+.navlink link,
+visted {
+    color: white;
+}
+
+.navlink hover,
+active {
+    color: black;
+}
+
+.backgroundgradient {
+    background: -webkit-linear-gradient(left, #603813, #341c05);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #603813, #341c05);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #603813, #341c05);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #603813, #341c05);
+}
+
+.navlink {
+    height: 35px;
+    margin-right: 10px;
+    font-size: 17px;
+    float: left;
+    padding-top: 12px;
+}
+
+.navlink.active {}
+
+#welcomeimage {
+    float: left;
+    width: 700px;
+}
+
+#coffeeofthemonth {
+    float: right;
+    width: 290px;
+}
+
+#welcometext {
+    float: left;
+    width: 70%;
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    -webkit-column-count: 2;
+    column-count: 2;
+}
+
+#welcometext > header {
+    color: #603813;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+#events {
+    float: right;
+    width: 30%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#events > header {
+    margin-left: 10px;
+    color: #603813;
+    font-size: 15px;
+    margin-bottom: 3px;
+    font-weight: bold;
+}
+
+#events > ul {
+    list-style: none;
+}
+
+#events > ul > li > a {
+    text-decoration: none;
+    margin-bottom: 3px;
+}
+
+#bestsellers {
+    height: 100%;
+    width: 700px;
+    float: left;
+    margin-bottom: 20px;
+}
+
+#bestsellers > header {
+    color: #603813;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.coffeebestsellers {
+    float: left;
+}
+
+.coffeebestsellers > header {
+    background-color: #603813;
+    color: white;
+    padding-left: 10px;
+}
+
+.accessoriesbestsellers {
+    clear: both;
+}
+
+.accessoriesbestsellers > header {
+    height: 30px;
+    line-height: 30px;
+    background-color: #603813;
+    color: white;
+    padding-left: 10px;
+}
+
+.addtocartbutton {
+    cursor: pointer;
+    padding: 4px 25px;
+    background: #603813;
+    border: 1px solid #381f09;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, .75);
+    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, .75);
+    box-shadow: 0 0 4px rgba(0, 0, 0, .75);
+    color: #f3f3f3;
+    font-size: 0.8em;
+    width: 80px;
+}
+
+.addtocartbutton:hover,
+.addtocartbutton:focus {
+    background-color: #512c0a;
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .75);
+    -moz-box-shadow: 0 0 1px rgba(0, 0, 0, .75);
+    -box-shadow: 0 0 1px rgba(0, 0, 0, .75);
+}
+
+.productarticle {
+    width: 200px;
+    float: left;
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+
+.productarticlethumbnail {
+    width: 100px;
+    height: 150px;
+}
+
+.productarticlename {
+    font-size: 15px;
+    color: #603813;
+    font-weight: bold;
+}
+
+.productarticleprice {
+    font-size: 15px;
+    color: green;
+    font-weight: bold;
+    padding-top: 15px;
+}
+
+.productarticlemoreinfo {
+    font-size: 12px;
+    color: #603813;
+    margin-top: 5px;
+}
+
+footer {
+    clear: both;
+    width: 100%;
+    background-color: #5c5045;
+    margin: 20px 0px 20px;
+    padding: 5px;
+}
+
+.smalltext {
+    font-size: 10px;
+}
+
+
+/*All coffees page styles*/
+
+.blockheader {
+    font-size: 30px;
+    font-family: headerfont;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.productarticlewide {
+    width: 100%;
+    float: left;
+}
+
+.productarticlewidethumbnail {
+    width: 100px;
+    height: 150px;
+    float: left;
+    margin: 20px;
+}
+
+.productarticlewidecontent {
+    width: 80%;
+    float: right;
+}
+
+.productarticlewidedescription {
+    text-wrap: normal;
+}
+
+.productarticlewidename {
+    font-size: 15px;
+    color: #603813;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.productarticlewideprice {
+    font-size: 15px;
+    color: green;
+    font-weight: bold;
+    padding-top: 15px;
+}
+
+.allcoffees {
+    float: left;
+    width: 750px;
+}
+
+#shoppingcart {
+    float: left;
+    width: 175px;
+}
+
+
+/*Coffee detail page*/
+
+.coffeedetails {
+    float: left;
+    width: 1000px;
+}
+
+.productarticlelargeimage {
+    width: 200px;
+    height: 300px;
+}
+
+.productarticlelargefigure {
+    float: left;
+    margin: 10px;
+}
+
+.productarticlecontent {
+    width: 75%;
+    float: right;
+}
+
+.productarticledescription {
+    text-wrap: normal;
+}
+
+.productarticleprice {
+    font-size: 25px;
+    color: green;
+    font-weight: bold;
+    padding-top: 15px;
+}
+
+
+/*Find us page styles*/
+.maptostore {
+    float: left;
+    width: 1000px;
+}
+
+#map {
+    float: left;
+    width: 65%;
+    height: 600px;
+    margin: 25px;
+}
+
+#driving-directions {
+    float: left;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Checkout</title>
+    <link rel="stylesheet" href="style/style.css" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <div>
+            <a class="headerlogo" href="index.html">
+                <img src="images/logo.png" />
+            </a>
+            <span id="headername">Joe's Coffee Store</span>
+            <input type="search" class="searchbox" placeholder="Search our store" />
+        </div>
+        <nav class="backgroundgradient">
+            <ul>
+                <li class="navlink"><a href="index.html">Home</a></li>
+                <li class="navlink"><a href="blog.html">Blog</a></li>
+                <li class="navlink"><a href="allcoffees.html">Our coffees</a></li>
+                <li class="navlink"><a href="accessories.html">Accessories</a></li>
+                <li class="navlink"><a href="gifts.html">Gifts</a></li>
+                <li class="navlink"><a href="findus.html">Find us</a></li>
+                <li class="navlink"><a href="checkout.html">Checkout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="welcomeimage">
+        <img src="images/coffeeheader.jpg" />
+    </div>
+    <div id="coffeeofthemonth">
+        <img src="images/cotm.jpg" />
+    </div>
+    <section class="coffeedetails">
+        <header class="blockheader">
+            <span>Checkout</span>
+        </header>
+        <form id="mainform" action="#" method="post">
+            <fieldset class="box">
+                <legend> Your details</legend>
+                <div>
+                    <p>
+                        <label class="textlable" for="firstNameInput"> First Name </label>
+                        <input id="firstNameInput" type="text" name="FirstName" 
+                        placeholder="First Name" required= "required" autofocus="autofocus" class="textinput" maxlength="25">
+                    </p>
+                    <p>
+                        <label class="textlable" for="lastNameInput"> Last Name </label>
+                        <input id="lastNameInput" type="text" name="LastName" required= "required" autofocus="autofocus" class="textinput" size="10" maxlength="30">
+                    </p>
+                    <p>
+                        <label class="textlable" for="emailInput">Email</label>
+                        <input id="emailInput" name="Email" type="email" required= "required" class="textinput">
+                    </p>
+                    <p>
+                        <label class="textlable" for="streetInput">Street</label>
+                        <input id="streetInput" name="Street" type="text" class="textinput">
+                    </p>
+                    <p>
+                        <label class="textlable" for="numberInput">Number</label>
+                        <input id="numberInput" name="Number" type="text" class="textinput">
+                    </p>
+                    <p>
+                        <label class="textlable" for="zipInput">ZIP code</label>
+                        <input id="zipInput" name="Zip" type="text" class="textinput">
+                    </p>
+                    <p>
+                        <label class="textlable" for="cityInput">City</label>
+                        <input id="cityInput" name="City" type="text" class="textinput">
+                    </p>
+                    <p>
+                        <label class="textlable" for="countryInput">Country</label>
+                        <input id="countryInput" name="Country" type="text" class="textinput" pattern="[a-za-z]{3}">
+                    </p>
+                    <p>
+                        <label class="textlable" for="phoneInput">Phone number</label>
+                        <input id="phoneInput" name="PhoneNumber" type="text" class="textinput">
+                    </p>
+                    <p>
+                        <label class="textlable" for="blogInput">Blog</label>
+                        <input id="blogInput" name="Blog" type="url" class="textinput">
+                    </p>
+                    <p>
+                        <label class="textlable" for="remarkInput">Remarks</label>
+                        <input id="remarkInput" name="Remark" type="text" class="textinput">
+                    </p>
+                </div>
+            </fieldset>
+            <fieldset class="box">
+                <legend>Your order</legend>
+                <p>
+                    <label class="textlable" for="deliveryDateInput">Requested delivery date</label>
+                    <input id="deliveryDateInput" name="deliveryDate" type="date" class="textinput">
+                </p>
+                <p>
+                    <label class="textlable" for="colorInput">Wrapping paper color</label>
+                    <input id="colorInput" name="Color" type="color" class="textinput">
+                </p>
+                <p>
+                    <label class="textlable" for="bowInput">How many bows on the package?</label>
+                    <input id="bowInput" name="Bows" type="number" class="textinput" placeholder="Enter a value between 1 and 10" min="1" max="10">
+                </p>
+            </fieldset>
+
+            <input type="submit" class="submitbutton" value="Place order"/>
+        </form>
+    </section>
+</body>
+
+</html>

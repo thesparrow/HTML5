@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Find our store</title>
+    <link rel="stylesheet" href="style/style.css" type="text/css" />
+    <script src="http://maps.google.com/maps/api/js?key=AIzaSyBk9HedG95CparLs-trkeDTpSxIE0XYqyY"></script>
+    <script src="scripts/geopositioning.js"></script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <a class="headerlogo" href="index.html">
+                <img src="images/logo.png" />
+            </a>
+            <span id="headername">Joe's Coffee Store</span>
+            <input type="search" class="searchbox" placeholder="Search our store" />
+        </div>
+        <nav class="backgroundgradient">
+            <ul>
+                <li><a class="navlink" href="index.html">Home</a></li>
+                <li><a class="navlink" href="blog.html">Blog</a></li>
+                <li><a class="navlink" href="allcoffees.html">Our coffees</a></li>
+                <li><a class="navlink" href="accessories.html">Accessories</a></li>
+                <li><a class="navlink" href="Gifts.html">Gifts</a></li>
+                <li><a class="navlink" href="findus.html">Find us</a></li>
+                <li><a class="navlink" href="checkout.html">Checkout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="welcomeimage">
+        <img src="images/coffeeheader.jpg" />
+    </div>
+    <div id="coffeeofthemonth">
+        <img src="images/cotm.jpg" />
+    </div>
+    <section class="maptostore">
+        <header class="blockheader">
+            <span> Come to our store today!</span>
+        </header>
+        <div id="map"></div>
+        <div id="driving-directions"></div>
+    </section>
+    <script>
+    document.addEventListener("DOMContentLoaded", createDrivingDirectionsMap, false);
+    </script>
+</body>
+
+</html>

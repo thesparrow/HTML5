@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Number Validation</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+    Integer 1:
+    <input type="number" id="int1" />
+    <br/> Integer 2:
+    <input type="number" id="int2" />
+    <br/>
+    <input type="button" name="add" value="Add" onclick="add()">
+    <input type="button" name="divide" value="Divide" onclick="divide()">
+</body>
+<script type="text/javascript">
+onerror = unhandled;
+
+function unhandled(msg, url, line) {
+    alert('There has been an unhandled exception.');
+}
+
+function add() {
+    alert($("#int1").val() + $("#int2").val());
+}
+
+function divide() {
+    if (isNaN($("#int1").val() || isNaN("#int2").val())) {
+        throw ('One or more values are non-numeric');
+    }
+    alert($("#int1").val() / $("#int2").val());
+}
+</script>
+
+</html>
